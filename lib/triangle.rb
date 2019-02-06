@@ -25,7 +25,7 @@ end
       raise TriangleError
     elsif (a+b) <= c || (a+c) <= b || (b+c) <= a
       raise TriangleError
-    else
+    end
   end
 
   class TriangleError < StandardError
