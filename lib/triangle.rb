@@ -10,20 +10,20 @@ end
 
 # kind method should raise TriangleError
   def kind
-    validate triangle
-      if a == b && b == c
-        :equilateral
-      elsif a == b || b == c || a == c
-        :isosceles
-      else
-        :scalene
-      end
+    validate_triangle
+    if a == b && b == c
+      :equilateral
+    elsif a == b || b == c || a == c
+      :isosceles
+    else
+      :scalene
     end
   end
 
+  def validate_triangle
+    
+  end
+
   class TriangleError < StandardError
-    def message
-      "Error Message"
-    end
   end
 end
